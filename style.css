@@ -1,0 +1,82 @@
+.main {
+	display: flex;
+	justify-content: space-around;
+}
+
+.shape {
+	position: relative;
+	background-color: #e34c26;
+	padding: 30px;
+	height: 350px;
+	width: 300px;
+	clip-path: polygon(50% 100%, 90% 90%, 100% 0, 0 0, 10% 90%);
+}
+
+.inner-shape {
+	z-index: 10;
+	background-color: #f06529;
+	height: 350px;
+	width: 300px;
+	clip-path: polygon(50% 100%, 90% 90%, 100% 0, 50% 0, 50% 72%);
+}
+
+.html-left {
+	left: 60px;
+	top: 70px;
+	position: absolute;
+	z-index: 100;
+	clip-path: polygon(50% 17%, 50% 0, 0 0, 5% 50%, 50% 50%, 50% 78%, 50% 84%, 27% 78%, 25% 59%, 6% 59%, 10% 90%, 50% 100%, 50% 90%, 50% 33%, 22% 33%, 20% 17%);
+	background-color: #ebebeb;
+	height: 270px;
+	width: 240px;
+}
+
+.html-right {
+	left: 60px;
+	top: 70px;
+	position: absolute;
+	z-index: 100;
+	clip-path: polygon(98% 17%, 100% 0, 50% 0, 50% 50%, 76% 50%, 73% 78%, 50% 84%, 50% 78%, 50% 59%, 50% 59%, 50% 90%, 50% 100%, 90% 90%, 96% 33%, 50% 33%, 50% 17%);
+	background-color: #fff;
+	height: 270px;
+	width: 240px;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'GothamPro';
+	font-size: 3rem;
+}
+
+.css-shape {
+	background-color: #264de4;
+}
+
+.css-inner {
+	background-color: #2965f1;
+}
+
+.css-left {
+	left: 60px;
+	top: 70px;
+	position: absolute;
+	z-index: 100;
+	clip-path: polygon(0 0, 50% 0, 50% 90%, 50% 100%, 10% 90%, 6% 60%, 25% 60%, 27% 75%, 50% 81%, 50% 75%, 50% 50%, 25% 50%, 23% 33%, 50% 33%, 50% 16%, 2% 16%);
+	background-color: #ebebeb;
+	height: 270px;
+	width: 240px;
+}
+
+.css-right {
+	left: 60px;
+	top: 70px;
+	position: absolute;
+	z-index: 100;
+	clip-path: polygon(50% 0, 100% 0, 90% 90%, 50% 100%, 50% 90%, 50% 59%, 50% 59%, 50% 75%, 50% 81%, 73% 75%, 76% 50%, 50% 50%, 50% 33%, 77% 33%, 79% 16%, 50% 16%);
+	background-color: #fff;
+	height: 270px;
+	width: 240px;
+}
+	
+/* CSS clip-path: polygon(0 0, 100% 0, 90% 90%, 50% 100%, 10% 90%, 6% 59%, 23% 59%, 25% 75%, 50% 81%, 75% 75%, 77% 50%, 25% 50%, 23% 32%, 80% 32%, 82% 16%, 2% 16%);
+/* HTML clip-path: polygon(98% 17%, 100% 0, 0 0, 5% 50%, 76% 50%, 73% 78%, 50% 84%, 27% 78%, 25% 59%, 6% 59%, 10% 90%, 50% 100%, 90% 90%, 96% 33%, 22% 33%, 20% 17%);
